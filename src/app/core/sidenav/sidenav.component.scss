@@ -2,13 +2,18 @@ aside {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  align-items: center;
+  align-items: stretch;
   width: 250px;
   height: 100vh;
   background-color: #2B2D42;
   overflow-x: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   font-family: Dosis, sans-serif;
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
 
   .logo {
     width: 200px;
@@ -22,14 +27,15 @@ aside {
     a {
       cursor: pointer;
       font-size: 25px;
-      color: white;
       padding-bottom: 20px;
+      color: #EDF2F4;
       padding-top: 20px;
+      padding-left: 20px;
 
       &.active {
-        background-color: #FCA311;
+        background-color: #EF233C;
         box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-        color: black;
+        color: #EDF2F4;
       }
     }
   }
