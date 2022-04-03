@@ -10,7 +10,8 @@ const routes: Routes = [{
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  { path: 'characters', loadChildren: () => import('./features/characters/characters.module').then(m => m.CharactersModule) }];
+  { path: 'characters', loadChildren: () => import('./features/characters/characters.module').then(m => m.CharactersModule) },
+  { path: 'rating', loadChildren: () => import('./features/rating/rating.module').then(m => m.RatingModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
