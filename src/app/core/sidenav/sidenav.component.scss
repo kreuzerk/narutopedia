@@ -1,0 +1,36 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+  width: 250px;
+  height: 100vh;
+  background-color: #2B2D42;
+  overflow-x: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  font-family: Dosis, sans-serif;
+
+  .logo {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      cursor: pointer;
+      font-size: 25px;
+      color: white;
+      padding-bottom: 20px;
+      padding-top: 20px;
+
+      &.active {
+        background-color: #FCA311;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+        color: black;
+      }
+    }
+  }
+}
