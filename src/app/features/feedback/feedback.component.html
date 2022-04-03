@@ -1,0 +1,15 @@
+<heading title="Do you have a feedback for the series"></heading>
+<div class="container">
+
+  <form [formGroup]="$any(feedbackForm)">
+    <div class="form-control-container">
+      <label>Enter your name</label>
+      <input formControlName="name"/>
+    </div>
+    <div class="form-control-container">
+      <label>Enter your feedback</label>
+      <textarea formControlName="feedback"></textarea>
+    </div>
+  </form>
+</div>
+

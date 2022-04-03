@@ -11,7 +11,8 @@ const routes: Routes = [{
     pathMatch: 'full'
   },
   { path: 'characters', loadChildren: () => import('./features/characters/characters.module').then(m => m.CharactersModule) },
-  { path: 'rating', loadChildren: () => import('./features/rating/rating.module').then(m => m.RatingModule) }];
+  { path: 'rating', loadChildren: () => import('./features/rating/rating.module').then(m => m.RatingModule) },
+  { path: 'feedback', loadChildren: () => import('./features/feedback/feedback.module').then(m => m.FeedbackModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
