@@ -12,7 +12,8 @@ const routes: Routes = [{
   },
   { path: 'characters', loadChildren: () => import('./features/characters/characters.module').then(m => m.CharactersModule) },
   { path: 'rating', loadChildren: () => import('./features/rating/rating.module').then(m => m.RatingModule) },
-  { path: 'feedback', loadChildren: () => import('./features/feedback/feedback.module').then(m => m.FeedbackModule) }];
+  { path: 'feedback', loadChildren: () => import('./features/feedback/feedback.module').then(m => m.FeedbackModule) },
+  { path: 'links', loadChildren: () => import('./features/links/links.module').then(m => m.LinksModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
